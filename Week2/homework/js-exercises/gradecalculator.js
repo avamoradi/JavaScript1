@@ -1,23 +1,24 @@
 'use strict'
 
-let grade = Math.floor(Math.random() * 100); 
+let grade = Math.floor(Math.random() * 100); // it give us a random number between 1 to 100
 
 console.log(myFunction(grade));
 
-function myFunction(x) {
-    if (x >= 90 && x <= 100) {
-     return ('Grade A (90% - 100%)')};
-    if (x >= 80 && x<= 89) {
-     return ('Grade B (80% - 89%)') };
-    if (x >= 70 && x<= 79) {
-     return('Grade C (70% - 79%)')};
-    if (x >= 60 && x<= 69) {
-     return('Grade D (60% - 69%)')};
-    if (x >=50 && x<= 59){
-     return('Grade E (50% - 59%)')}
-    else {
-     return('Grade F (0% - 49%)');
-   }
+function myFunction(grade) {
+ let x = (grade * 100) / 100; // this line calculates the percentages
+  if (x >= 90 && x <= 100) {
+    return ('you got a A' + x + '%')};
+  if (x >= 80 && x<= 89) {
+    return ('you got a B '+ x + '%' )};
+  if (x >= 70 && x<= 79) {
+    return('you got a C '+ x + '%')};
+  if (x >= 60 && x<= 69) {
+    return('you got a D '+ x + '%')};
+  if (x >=50 && x<= 59){
+    return('you got a E ' + x + '%')}
+  else {
+    return('you got a F ' + x + '%');
+  }
 }
 
 
