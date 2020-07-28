@@ -14,6 +14,7 @@ function calculateTotalPrice (cartForParty) {
 //    sum += cartForParty[x];
 //  }
 //  console.log(sum);
+
 const values = Object.values(cartForParty);
 let sum = 0;
 for (const value of values) {
